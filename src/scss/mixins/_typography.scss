@@ -1,0 +1,25 @@
+
+// Mixin that will include the fall back px declaration as well as the calculated rem value.
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: rem($size);
+}
+
+// Reset Unordered lists
+@mixin reset-list() {
+  margin: 0;
+  padding: 0;
+
+  li {
+    float: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+@mixin header-font() {
+  font-weight: $font-bold;
+  text-transform: uppercase;
+  letter-spacing: rem(3px);
+ }

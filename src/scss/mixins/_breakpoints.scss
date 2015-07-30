@@ -1,0 +1,18 @@
+// See Includes/Variables for Names
+
+// respond-to
+$media-style: max-width;
+@mixin respond-to($breakpoint) {
+  @media only screen and ($media-style: $breakpoint) { @content; }
+}
+
+// build media queries
+@mixin tiny()     { @include respond-to($tiny) { @content; } }
+@mixin small()    { @include respond-to($small) { @content; } }
+@mixin phone()    { @include respond-to($phone) { @content; } }
+@mixin mobile()   { @include respond-to($mobile) { @content; } } // magic #
+@mixin phone-l()  { @include respond-to($phone-l) { @content; } }
+@mixin tablet()   { @include respond-to($tablet) { @content; } }
+@mixin tablet-l() { @include respond-to($tablet-l) { @content; } }
+@mixin full()     { @include respond-to($full) { @content; } }
+@mixin desktop()  { @include respond-to($desktop) { @content; } }

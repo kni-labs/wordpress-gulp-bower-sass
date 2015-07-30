@@ -1,0 +1,42 @@
+html {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: $base-font;
+  overflow-x: hidden;
+}
+
+#wpadminbar {
+  display: none;
+}
+
+input {
+  outline: none;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Utility classes
+.cf {
+  @include cf();
+}
+
+nav { ul { @include reset-list(); } }
+
+.container {
+  position: relative;
+  margin-left: rem(85px);
+  margin-right: rem(25px);
+  @include mobile() {
+    margin: 0 20px;
+  }
+}
+
+
+
+

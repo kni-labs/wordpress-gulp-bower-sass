@@ -1,0 +1,40 @@
+$d-coal: #151515;
+$coal: #444;
+$l-coal: #888;
+
+$white: #FFF;
+
+$green: #1bc09f;
+$d-green: #16A085;
+
+$base-font-size: 16px;
+$global-border-radius: 4px;
+
+$spacing: 10px;
+$spacing-double: $spacing * 2;
+$spacing-triple: $spacing * 3;
+$spacing-quad:   $spacing * 4;
+$spacing-quint:  $spacing * 5;
+$spacing-sext:   $spacing * 6;
+$spacing-sept:   $spacing * 7;
+$spacing-oct: 	 $spacing * 8;
+$spacing-half:   $spacing / 2;
+$spacing-third:  $spacing / 3;
+$spacing-fourth: $spacing / 4;
+
+$logo-height: 22px;
+$logo-baseline-adjust: 2px;
+$nav-height: $logo-height + 30px;
+
+$sub-nav-height: 145px;
+$sub-item-top: $sub-nav-height + $nav-height;
+
+$tiny: 320px;
+$small: 480px;
+$phone: 640px;
+$mobile: 767px;
+$phone-l: 768px;
+$tablet: 960px;
+$tablet-l: 1024px;
+$full: 1080px;
+$desktop: 1280px;

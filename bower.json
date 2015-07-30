@@ -1,11 +1,11 @@
 {
-  "name": "wordpress-gulp-bower-sass",
-  "homepage": "https://github.com/synapticism/wordpress-gulp-bower-sass",
+  "name": "kni-wp",
+  "homepage": "kni-wp",
   "authors": [
     {
-      "name": "Alexander Synaptic",
-      "email": "alexander@synapticism.com",
-      "homepage": "http://synapticism.com"
+      "name": "Alexander Synaptic | KNI-Labs",
+      "email": "alexander@synapticism.com | projects@kurtnoble.com",
+      "homepage": "http://synapticism.com | kurtnoble.com"
     }
   ],
   "keywords": [
@@ -32,7 +32,7 @@
     "normalize.css": "^3.0.3",
     "scut": "^1.2.0",
     "html5-history-api": "^4.2.1",
-    "spin.js": "^2.3.1",
-    "wp-ajax-page-loader": "^0.1.1"
+    "wp-ajax-page-loader": "^0.1.1",
+    "jquery": "~2.1.4"
   }
 }

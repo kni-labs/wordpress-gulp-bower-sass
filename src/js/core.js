@@ -1,8 +1,25 @@
-// ==== CORE ==== //
-
-// A simple wrapper for all your custom jQuery; everything in this file will be run on every page
 ;(function($){
   $(function(){
-    // Insert jQuery code here!
+	var def = function() {
+		app.options = {};
+
+		// setup touch for mobile
+		app.options.uAgent = navigator.userAgent;
+    app.options.interaction = app.options.uAgent.match(/(iPad|iPhone|iPod)/g) ? "touchstart" : "click";
+
+		init.call(this);
+	};
+
+	var init = function(){
+		this.tester();
+	};
+
+	def.prototype = {
+		tester: function() {
+			testing();
+		}
+	};
+
+	return def;
   });
 }(jQuery));

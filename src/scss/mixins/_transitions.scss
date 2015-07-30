@@ -1,0 +1,19 @@
+@mixin transition-timing-duration() {
+	transition-duration: .3s;
+	transition-timing-function: ease-in-out;
+}
+
+@mixin bgTransition() {
+	transition-property: background;
+	@include transition-timing-duration();
+}
+
+@mixin colorTransition() {
+	transition-property: color;
+	@include transition-timing-duration();
+}
+
+@mixin borderTransition() {
+	transition-property: border;
+	@include transition-timing-duration();
+}

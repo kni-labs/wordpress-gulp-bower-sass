@@ -1,7 +1,7 @@
 // ==== CONFIGURATION ==== //
 
 // Project paths
-var project     = 'voidx'
+var project     = 'kni-gulp'
   , src         = './src/'
   , build       = './build/'
   , dist        = './dist/'+project+'/'

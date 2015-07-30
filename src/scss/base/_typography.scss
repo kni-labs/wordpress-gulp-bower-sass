@@ -1,0 +1,65 @@
+//Typogrpahy
+
+.defaultType {
+  font-family: $base-font;
+  color: $coal;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+body, p, a, h1, h2, h3, h4, h5, h6,
+small, em, strong, input, button {
+  @extend .defaultType;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  display: block;
+  margin: 1rem 0;
+  font-weight: normal;
+
+  &:first-child {
+    margin-top: 0;
+  }
+  a { color: inherit;  }
+}
+
+@mixin h1() { @include font-size(56px); }
+@mixin h2() { @include font-size(48px); }
+@mixin h3() { @include font-size(36px); }
+@mixin h4() { @include font-size(30px); }
+@mixin h5() { @include font-size(24px); }
+@mixin h6() { @include font-size(20px); }
+
+h1 { @include h1(); }
+h2 { @include h2(); }
+h3 { @include h3(); }
+h4 { @include h4(); }
+h5 { @include h5(); }
+h6 { @include h6(); }
+
+@include mobile() {
+  h1 { font-size: rem(26px); }
+  h2 { font-size: rem(25px); }
+  h3 { font-size: rem(24px); }
+  h4 { font-size: rem(23px); }
+  h5 { font-size: rem(22px); }
+  h6 { font-size: rem(20px); } 
+}
+
+
+$tight-spacing: -.045em;
+$snug-spacing:  -.02em;
+$more-spacing:  .1em;
+
+@mixin heavy-antialias() {
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+p { line-height: 1.5em; }
+a { text-decoration: none; }
+
+.title {
+  @include header-font();
+}

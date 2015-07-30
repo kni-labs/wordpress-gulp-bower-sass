@@ -1,0 +1,27 @@
+// Button Mixin
+@mixin button($font-size, $backgroundColor:$button-primary, $color:$white){
+  font-size: $font-size;
+  padding: 10px 22px;
+  border-radius: $global-border-radius;
+  background-color: $backgroundColor;
+  color: $color;
+  cursor: pointer;
+  font-weight: 700;
+  line-height: 1em;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: none;
+  transition: all .2s ease;
+
+  &:hover {
+    background-color: darken($backgroundColor, 10%);
+  }
+}
+
+@mixin hr($color, $width) {
+  border: none;
+  height: 1px;
+  background-color: $color;
+  width: $width;
+}

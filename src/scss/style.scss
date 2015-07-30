@@ -1,20 +1,30 @@
-/*!
-Theme Name: Voidx
-Theme URI: https://github.com/synapticism/wordpress-gulp-bower-sass
-Author: Alexander Synaptic
-Author URI: http://synapticism.com
-Description:
-Version: 0.0.4
-License: GPLv3
-License URI: http://www.gnu.org/licenses/gpl.txt
-Tags: light, responsive-layout, right-sidebar, starter-theme, two-column, translation-ready, white
-Text Domain:
-Domain Path: /languages/
-*/
+// reset it all
+@import "includes/reset";
 
-@import "loader";
-@import "general";
-@import "layout";
-@import "menus";
-@import "navigation";
-@import "sidebar";
+// includes
+@import "includes/variables";
+@import "includes/fonts";
+
+@import "mixins/breakpoints";
+@import "mixins/interactions";
+@import "mixins/transitions";
+@import "mixins/typography";
+@import "mixins/ui";
+@import "mixins/utilities";
+
+// Jeet
+@import 'jeet/settings';
+@import 'jeet/functions';
+@import 'jeet/grid';
+
+// base elements
+@import "base/base";
+@import "base/typography";
+
+// components
+@import "components/nav";
+
+// modules
+@import "modules/footer";
+@import "modules/header";
+
